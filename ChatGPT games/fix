@@ -1,0 +1,444 @@
+def display_title_screen():
+	print("\n" * 10)
+	print("#############################")
+	print("# Welcome to the Adventure! #")
+	print("#############################")
+	print("\n")
+	print("1. Start game")
+	print("2. Quit")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		start_game()
+	elif option == 2:
+		quit()
+
+def start_game():
+	print("\n" * 10)
+	print("You find yourself in a dark forest.")
+	print("You can see a light in the distance.")
+	print("Do you want to go towards the light or explore the forest?")
+	print("1. Go towards the light")
+	print("2. Explore the forest")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_towards_light()
+	elif option == 2:
+		explore_forest()
+
+def go_towards_light():
+	print("\n" * 10)
+	print("You start walking towards the light.")
+	print("As you get closer, you see that it's coming from a small cottage.")
+	print("Do you want to go inside the cottage or continue walking?")
+	print("1. Go inside the cottage")
+	print("2. Continue walking")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_inside_cottage()
+	elif option == 2:
+		continue_walking()
+
+def explore_forest():
+	print("\n" * 10)
+	print("You start exploring the forest.")
+	print("After a while, you come across a river.")
+	print("Do you want to follow the river or go back to the cottage?")
+	print("1. Follow the river")
+	print("2. Go back to the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		follow_river()
+	elif option == 2:
+		go_back_to_cottage()
+
+def go_inside_cottage():
+	print("\n" * 10)
+	print("You go inside the cottage.")
+	print("You see an old man sitting by the fire.")
+	print("Do you want to talk to the old man or leave the cottage?")
+	print("1. Talk to the old man")
+	print("2. Leave the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		talk_to_old_man()
+	elif option == 2:
+		leave_cottage()
+
+def continue_walking():
+	print("\n" * 10)
+	print("You continue walking.")
+	print("After a while, you come across a town.")
+	print("Do you want to go into the town or go back to the cottage?")
+	print("1. Go into the town")
+	print("2. Go back to the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_into_town()
+	elif option == 2:
+		go_back_to_cottage()
+
+def go_back_to_cottage():
+	print("\n" * 10)
+	print("You go back to the cottage.")
+	print("Do you want to go inside the cottage or leave the area?")
+	print("1. Go inside the cottage")
+	print("2. Leave the area")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_inside_cottage()
+	elif option == 2:
+		leave_area()
+
+def follow_river():
+	print("\n" * 10)
+	print("You follow the river.")
+	print("After a while, you come across a waterfall.")
+	print("Do you want to go near the waterfall or go back to the cottage?")
+	print("1. Go near the waterfall")
+	print("2. Go back to the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_near_waterfall()
+	elif option == 2:
+		go_back_to_cottage()
+
+def talk_to_old_man():
+	print("\n" * 10)
+	print("You talk to the old man.")
+	print("He tells you about a hidden treasure in the forest.")
+	print("Do you want to search for the treasure or leave the cottage?")
+	print("1. Search for the treasure")
+	print("2. Leave the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		search_for_treasure()
+	elif option == 2:
+		leave_cottage()
+
+def leave_cottage():
+	print("\n" * 10)
+	print("You leave the cottage.")
+	print("Do you want to go towards the light or explore the forest?")
+	print("1. Go towards the light")
+	print("2. Explore the forest")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_towards_light()
+	elif option == 2:
+		explore_forest()
+
+def go_into_town():
+	print("\n" * 10)
+	print("You go into the town.")
+	print("You see a market, a tavern, and a blacksmith.")
+	print("Where do you want to go first?")
+	print("1. Market")
+	print("2. Tavern")
+	print("3. Blacksmith")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_to_market()
+	elif option == 2:
+		go_to_tavern()
+	elif option == 3:
+		go_to_blacksmith()
+
+def go_to_market():
+	print("\n" * 10)
+	print("You go to the market.")
+	print("You see various stalls selling food, clothing, and weapons.")
+	print("Do you want to buy something or leave the market?")
+	print("1. Buy something")
+	print("2. Leave the market")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		buy_something()
+	elif option == 2:
+		leave_market()
+
+def go_to_tavern():
+	print("\n" * 10)
+	print("You go to the tavern.")
+	print("You see various people drinking, playing games, and singing.")
+	print("Do you want to drink, play a game, or leave the tavern?")
+	print("1. Drink")
+	print("2. Play a game")
+	print("3. Leave the tavern")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		drink()
+	elif option == 2:
+		play_game()
+	elif option == 3:
+		leave_tavern()
+
+def go_to_blacksmith():
+	print("\n" * 10)
+	print("You go to the blacksmith.")
+	print("You see various weapons and armor being forged and repaired.")
+	print("Do you want to buy a weapon or armor or leave the blacksmith?")
+	print("1. Buy a weapon or armor")
+	print("2. Leave the blacksmith")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		buy_weapon_or_armor()
+	elif option == 2:
+		leave_blacksmith()
+
+def buy_something():
+	print("\n" * 10)
+	print("You buy something at the market.")
+	print("Do you want to continue shopping or leave the market?")
+	print("1. Continue shopping")
+	print("2. Leave the market")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		continue_shopping()
+	elif option == 2:
+		leave_market()
+
+def drink():
+	print("\n" * 10)
+	print("You drink at the tavern.")
+	print("Do you want to continue drinking or leave the tavern?")
+	print("1. Continue drinking")
+	print("2. Leave the tavern")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		continue_drinking()
+	elif option == 2:
+		leave_tavern()
+
+def play_game():
+	print("\n" * 10)
+	print("You play a game at the tavern.")
+	print("Do you want to continue playing games or leave the tavern?")
+	print("1. Continue playing games")
+	print("2. Leave the tavern")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		continue_playing_games()
+	elif option == 2:
+		leave_tavern()
+
+def buy_weapon_or_armor():
+	print("\n" * 10)
+	print("You buy a weapon or armor at the blacksmith.")
+	print("Do you want to buy something else or leave the blacksmith?")
+	print("1. Buy something else")
+	print("2. Leave the blacksmith")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		buy_something_else()
+	elif option == 2:
+		leave_blacksmith()
+
+def leave_market():
+	print("\n" * 10)
+	print("You leave the market.")
+	print("Do you want to go to the tavern or the blacksmith or leave the town?")
+	print("1. Go to the tavern")
+	print("2. Go to the blacksmith")
+	print("3. Leave the town")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_to_tavern()
+	elif option == 2:
+		go_to_blacksmith()
+	elif option == 3:
+		leave_town()
+
+def leave_tavern():
+	print("\n" * 10)
+	print("You leave the tavern.")
+	print("Do you want to go to the market or the blacksmith or leave the town?")
+	print("1. Go to the market")
+	print("2. Go to the blacksmith")
+	print("3. Leave the town")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		go_to_market()
+	elif option == 2:
+		go_to_blacksmith()
+	elif option == 3:
+		leave_town()
+
+def leave_town():
+	print("\n" * 10)
+	print("You leave the town.")
+	print("Do you want to go back to the forest or go to the marketplace?")
+	print("1. Go back to the forest")
+	print("2. Go to the marketplace")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		start_game()
+	elif option == 2:
+		go_to_marketplace()
+
+
+def leave_area():
+	print("\n" * 10)
+	print("You leave the area.")
+	print("Game Over")
+	quit()
+
+def go_near_waterfall():
+	print("\n" * 10)
+	print("You go near the waterfall.")
+	print("You hear a strange noise coming from behind the waterfall.")
+	print("Do you want to investigate the noise or go back to the cottage?")
+	print("1. Investigate the noise")
+	print("2. Go back to the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		investigate_noise()
+	elif option == 2:
+		go_back_to_cottage()
+
+def go_to_marketplace():
+	print("\n" * 10)
+	print("You go to the marketplace.")
+	print("You see a strange man selling a map.")
+	print("Do you want to buy the map or leave the marketplace?")
+	print("1. Buy the map")
+	print("2. Leave the marketplace")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		buy_map()
+	elif option == 2:
+		leave_marketplace()
+
+def buy_map():
+	print("\n" * 10)
+	print("You buy the map.")
+	print("The map leads you to a hidden treasure.")
+	print("Congratulations! You found the treasure.")
+	quit()
+
+def leave_marketplace():
+	print("\n" * 10)
+	print("You leave the marketplace.")
+	print("Do you want to go back to the town or go back to the forest?")
+
+def search_for_treasure():
+	print("\n" * 10)
+	print("You start searching for the treasure.")
+	print("After searching for a while, you come across a map.")
+	print("Do you want to follow the map or go back to the cottage?")
+	print("1. Follow the map")
+	print("2. Go back to the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		follow_map()
+	elif option == 2:
+		go_back_to_cottage()
+
+def follow_map():
+	print("\n" * 10)
+	print("You follow the map and reach a location marked X.")
+	print("You dig the ground and find a chest.")
+	print("Do you want to open the chest or go back to the cottage?")
+	print("1. Open the chest")
+	print("2. Go back to the cottage")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		open_chest()
+	elif option == 2:
+		go_back_to_cottage()
+
+def open_chest():
+	print("\n" * 10)
+	print("You open the chest and find the hidden treasure!")
+	print("Congratulations! You have found the treasure!")
+	print("Do you want to play again or quit?")
+	print("1. Play again")
+	print("2. Quit")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		start_game()
+	elif option == 2:
+		quit()
+
+def leave_blacksmith():
+	print("\n" * 10)
+	print("You leave the blacksmith.")
+	print("You can go to the marketplace or leave town?")
+	print("1. Go to the marketplace")
+	print("2. Leave town")
+	option = int(input("Choose an option:"))
+	if option == 1:
+		go_to_marketplace()
+	elif option == 2:
+		leave_town()
+
+def continue_shopping():
+	print("\n" * 10)
+	print("You continue shopping at the market.")
+	buy_something()
+
+def continue_drinking():
+	print("\n" * 10)
+	print("You continue drinking at the tavern.")
+	print("Do you want to continue drinking or leave the tavern?")
+	print("1. Continue drinking")
+	print("2. Leave the tavern")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		continue_drinking()
+	elif option == 2:
+		leave_tavern()
+
+def continue_playing_games():
+	print("\n" * 10)
+	print("You continue playing games at the tavern.")
+	print("Do you want to continue playing games or leave the tavern?")
+	print("1. Continue playing games")
+	print("2. Leave the tavern")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		continue_playing_games()
+	elif option == 2:
+		leave_tavern()
+
+def buy_something_else():
+	print("\n" * 10)
+	print("You buy something else at the blacksmith.")
+	print("Do you want to buy another item or leave the blacksmith?")
+	print("1. Buy another item")
+	print("2. Leave the blacksmith")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		buy_something_else()
+	elif option == 2:
+		leave_blacksmith()
+
+def investigate_noise():
+	print("\n" * 10)
+	print("You investigate the noise behind the waterfall.")
+	print("What do you discover?")
+	print("You discover a dog hiding behind the waterfall.")
+	print("Do you want to pet the dog or leave?")
+	print("1. Pet dog")
+	print("2. Go back")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		pet_dog()
+	elif option == 2:
+		go_near_waterfall()
+
+def pet_dog():
+	print("\n" * 10)
+	print("You pet the dog.")
+	print("The dog seems happy.")
+	print("Do you want to pet the dog or leave?")
+	print("1. Pet dog")
+	print("2. Go back")
+	option = int(input("Choose an option: "))
+	if option == 1:
+		pet_dog()
+	elif option == 2:
+		go_near_waterfall()
+
+display_title_screen()
+
+

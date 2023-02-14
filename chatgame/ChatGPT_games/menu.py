@@ -6,6 +6,7 @@ def start():
 	print("1. Tic Tac Toe")
 	print("2. Password Manager")
 	print("3. Text Adventure: Escape the Forest")
+	print("4. Save information")
 
 	selected_game = int(input("Please select a game to play (1, 2, or 3): "))
 
@@ -28,6 +29,10 @@ def start():
 		# code for Text Adventure: Escape the Forest game
 		print("You have selected Text Adventure: Escape the Forest.")
 		display_title_screen()
+	elif selected_game == 4:
+		from savingloading import start
+		print("You have selected save information.")
+		start()
 	else:
 		print("Invalid selection. Please try again.")
 
